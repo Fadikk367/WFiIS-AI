@@ -1,0 +1,286 @@
+[
+    {
+        "name": "Oradea",
+        "neighbours": [
+            {
+                "name": "Zerind",
+                "distance": 71
+            },
+            {
+                "name": "Sibiu",
+                "distance": 151
+            }
+        ]
+    },
+    {
+        "name": "Zerind",
+        "neighbours": [
+            {
+                "name": "Oradea",
+                "distance": 71
+            },
+            {
+                "name": "Arad",
+                "distance": 75
+            }
+        ]
+    },
+    {
+        "name": "Arad",
+        "neighbours": [
+            {
+                "name": "Zerind",
+                "distance": 75
+            },
+            {
+                "name": "Sibiu",
+                "distance": 140
+            },
+            {
+                "name": "Timisoara",
+                "distance": 118
+            }
+        ]
+    },
+    {
+        "name": "Sibiu",
+        "neighbours": [
+            {
+                "name": "Oradea",
+                "distance": 151
+            },
+            {
+                "name": "Arad",
+                "distance": 140
+            },
+            {
+                "name": "Rimnicu Vilcea",
+                "distance": 80
+            },
+            {
+                "name": "Fagaras",
+                "distance": 99
+            }
+        ]
+    },
+    {
+        "name": "Timisoara",
+        "neighbours": [
+            {
+                "name": "Arad",
+                "distance": 118
+            },
+            {
+                "name": "Lugoj",
+                "distance": 111
+            }
+        ]
+    },
+    {
+        "name": "Lugoj",
+        "neighbours": [
+            {
+                "name": "Timisoara",
+                "distance": 111
+            },
+            {
+                "name": "Mehadia",
+                "distance": 70
+            }
+        ]
+    },
+    {
+        "name": "Mehadia",
+        "neighbours": [
+            {
+                "name": "Lugoj",
+                "distance": 70
+            },
+            {
+                "name": "Dobreta",
+                "distance": 75
+            }
+        ]
+    },
+    {
+        "name": "Dobreta",
+        "neighbours": [
+            {
+                "name": "Mehadia",
+                "distance": 75
+            },
+            {
+                "name": "Craiova",
+                "distance": 120
+            }
+        ]
+    },
+    {
+        "name": "Craiova",
+        "neighbours": [
+            {
+                "name": "Dobreta",
+                "distance": 120
+            },
+            {
+                "name": "Rimnicu Vilcea",
+                "distance": 146
+            },
+            {
+                "name": "Pitesti",
+                "distance": 138
+            }
+        ]
+    },
+    {
+        "name": "Rimnicu Vilcea",
+        "neighbours": [
+            {
+                "name": "Sibiu",
+                "distance": 80
+            },
+            {
+                "name": "Pitesti",
+                "distance": 97
+            },
+            {
+                "name": "Craiova",
+                "distance": 146
+            }
+        ]
+    },
+    {
+        "name": "Pitesti",
+        "neighbours": [
+            {
+                "name": "Rimnicu Vilcea",
+                "distance": 97
+            },
+            {
+                "name": "Bucharest",
+                "distance": 101
+            },
+            {
+                "name": "Craiova",
+                "distance": 138
+            }
+        ]
+    },
+    {
+        "name": "Fagaras",
+        "neighbours": [
+            {
+                "name": "Sibiu",
+                "distance": 99
+            },
+            {
+                "name": "Bucharest",
+                "distance": 211
+            }
+        ]
+    },
+    {
+        "name": "Bucharest",
+        "neighbours": [
+            {
+                "name": "Pitesti",
+                "distance": 101
+            },
+            {
+                "name": "Fagaras",
+                "distance": 211
+            },
+            {
+                "name": "Giurgiu",
+                "distance": 90
+            },
+            {
+                "name": "Urziceni",
+                "distance": 85
+            }
+        ]
+    },
+    {
+        "name": "Giurgiu",
+        "neighbours": [
+            {
+                "name": "Bucharest",
+                "distance": 90
+            }
+        ]
+    },
+    {
+        "name": "Urziceni",
+        "neighbours": [
+            {
+                "name": "Bucharest",
+                "distance": 85
+            },
+            {
+                "name": "Vaslui",
+                "distance": 142
+            },
+            {
+                "name": "Hirsova",
+                "distance": 98
+            }
+        ]
+    },
+    {
+        "name": "Hirsova",
+        "neighbours": [
+            {
+                "name": "Urziceni",
+                "distance": 98
+            },
+            {
+                "name": "Eforie",
+                "distance": 86
+            }
+        ]
+    },
+    {
+        "name": "Eforie",
+        "neighbours": [
+            {
+                "name": "Hirsova",
+                "distance": 86
+            }
+        ]
+    },
+    {
+        "name": "Vaslui",
+        "neighbours": [
+            {
+                "name": "Urziceni",
+                "distance": 142
+            },
+            {
+                "name": "Iasi",
+                "distance": 92
+            }
+        ]
+    },
+    {
+        "name": "Iasi",
+        "neighbours": [
+            {
+                "name": "Vaslui",
+                "distance": 92
+            },
+            {
+                "name": "Neamt",
+                "distance": 87
+            }
+        ]
+    },
+    {
+        "name": "Neamt",
+        "neighbours": [
+            {
+                "name": "Iasi",
+                "distance": 87
+            }
+        ]
+    }
+]
