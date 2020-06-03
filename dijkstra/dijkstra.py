@@ -67,10 +67,47 @@ def get_path_as_string(result, start, destination):
     return path_str
 
     
+def print_list(list, row_count):
+    count = 0
+    row_str = ''
+    for city in graph:
+        row_str += city + ', '
+        count += 1
+        if count % row_count == 0: 
+            print(row_str)
+            row_str = ''
+            count = 0
+    print(row_str)
+
+
+def check_if_city_exists(city, cities):
+    if city in cities:
+        return True
+    else:
+        raise ValueError('No such city...')
+
+
 
 if __name__ == '__main__':
     graph = load_graph_from_json('cities.json')
+    cities = [city for city in graph]
+    print('Available cities: ')
+    print_list(cities, row_count=6)
+    print()
+    print('Basic example with Arad to Bucharest shortest path:')
     result = shortest_path(graph, start_vertex="Arad")
     path = get_path_as_string(result, start="Arad", destination="Bucharest")
     print(path)
+    print()
+    try:
+        start_city = input('Enter starting point city: ')
+        check_if_city_exists(start_city, cities)
+        result_tab = shortest_path(graph, start_vertex=start_city)
+        dest_city = input('Enter destination: ')
+        check_if_city_exists(dest_city, cities)
+        path = get_path_as_string(result_tab, start=start_city, destination=dest_city)
+        print(path)
+        print("Drive save :D")
+    except ValueError as err:
+        print(err)
 

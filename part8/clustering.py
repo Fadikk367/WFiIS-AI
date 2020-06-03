@@ -78,9 +78,9 @@ for item in documents:
     years.append(item['year'])
 
 
-df_1 =  pd.DataFrame(data={'contributors': contributors, 'pages': pages})
+df_1 =  pd.DataFrame(data={'pages': pages, 'contributors': contributors})
 df_2 =  pd.DataFrame(data={'years': years, 'contributors': contributors})
-df_3 =  pd.DataFrame(data={'yeas': years, 'pages': pages})
+df_3 =  pd.DataFrame(data={'pages': pages, 'yeas': years})
 data_frames = [df_1, df_2, df_3]
 
 df = pd.DataFrame(data={'contributors': contributors, 'pages': pages, 'years': years})
@@ -101,7 +101,7 @@ plt.xlabel('clusters number')
 plt.ylabel('distortion')
 
 pca = PCA()
-pca_data = pca.fit_transform(pd.DataFrame(data=df))
+pca_data = pca.fit_transform(df)
 print("\nPCA decompositions ratios:")
 print(pca.explained_variance_ratio_)
 print("\n\n")
@@ -116,6 +116,7 @@ for i, df in enumerate(data_frames):
     print('centers:')
     print(centers)
     print()
+
 
     data = df.values
 

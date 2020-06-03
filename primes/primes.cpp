@@ -82,7 +82,7 @@ class PrimesGenerator {
         int k;
         for (int i = 2; i*i <= m_n; ++i) 
             if (m_primes[i]) 
-                for (k = 2*i; k <= m_n; k += i)
+                for (k = i*i; k <= m_n; k += i)
                     m_primes[k] = false;
 
         auto finishTime = std::chrono::steady_clock::now();
