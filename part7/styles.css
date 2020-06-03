@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.board {
+    width: 510px;
+    height: 510px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(61, 207, 251);
+    align-items: center;
+    justify-items: center;
+}
+
+.board__tile {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 230, 240);
+    border-radius: 15px;
+
+    font-size: 64px;
+    font-weight: 200;
+
+}
+
+.board__tile-active:hover {
+    background-color: rgb(255, 255, 255); 
+    cursor: pointer;
+}
+
+.board__tile-disable {
+    background-color: rgb(184, 184, 184);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgb(29, 43, 122);
+}
+
+
+
+.start_btn, .restart_btn, .select_circle_btn, .select_cross_btn {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0 10px;
+
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+
+.results {
+    margin-top: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+    /* margin-top: 20px; */
+
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(29, 43, 122, 0.726);
+}
+
+.modal__title {
+    padding: 10px;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.modal__btns {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.victory {
+    background-color: rgb(114, 182, 75);
+}
+
+.defeat {
+    background-color: rgb(228, 74, 74);   
+}
+
+.tie {
+    background-color: rgb(236, 213, 113);
+}
