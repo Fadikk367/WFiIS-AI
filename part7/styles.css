@@ -10,6 +10,17 @@ body {
     height: 100vh;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,248,249,0.7738445720084909) 0%, rgba(0,255,145,0.6029762246695554) 100%);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgb(33, 118, 175);
 }
 
 main {
@@ -19,71 +30,6 @@ main {
     flex-grow: 1;
     margin: 10px;
 }
-
-.board {
-    width: 510px;
-    height: 510px;
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 5px;
-    border-radius: 20px;
-    padding: 15px;
-    background-color: rgb(61, 207, 251);
-    align-items: center;
-    justify-items: center;
-}
-
-.board__tile {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(175, 230, 240);
-    border-radius: 15px;
-
-    font-size: 64px;
-    font-weight: 200;
-
-}
-
-.board__tile-active:hover {
-    background-color: rgb(255, 255, 255); 
-    cursor: pointer;
-}
-
-.board__tile-disable {
-    background-color: rgb(184, 184, 184);
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-    background-color: rgb(29, 43, 122);
-}
-
-
-
-.start_btn, .restart_btn, .select_circle_btn, .select_cross_btn {
-    border: 1px solid white;
-    background-color: transparent;
-    padding: 20px;
-    margin: 0 10px;
-
-    color: white;
-    font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    border-radius: 10px;
-
-    cursor: pointer;
-}
-
 
 .results {
     margin-top: auto;
@@ -112,14 +58,30 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(29, 43, 122, 0.726);
+    background-color: rgba(42, 57, 141, 0.822);
+}
+
+.start_btn, .restart_btn, .select_circle_btn, .select_cross_btn {
+    background-color: rgb(14, 109, 138);
+    padding: 20px;
+    margin: 0 10px;
+    border: 2px solid white;
+
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+
+    cursor: pointer;
 }
 
 .modal__title {
     padding: 10px;
+    letter-spacing: 2px;
     color: white;
     font-size: 1.7em;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .modal__btns {
@@ -127,15 +89,53 @@ main {
     margin-top: 10px;
 }
 
+.board {
+    width: 510px;
+    height: 510px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(33, 118, 175);
+    align-items: center;
+    justify-items: center;
+}
+
+.board__tile {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 148, 206);
+    border-radius: 15px;
+    color: white;
+
+    font-size: 64px;
+    font-weight: 200;
+
+}
+
+.board__tile-active:hover {
+    background-color: rgb(255, 255, 255); 
+    cursor: pointer;
+}
+
+.board__tile-disable {
+    background-color: rgb(14, 109, 138);
+}
 
 .victory {
-    background-color: rgb(114, 182, 75);
+    background-color: rgb(97, 156, 63);
 }
 
 .defeat {
-    background-color: rgb(228, 74, 74);   
+    background-color: rgb(187, 70, 70);   
 }
 
 .tie {
-    background-color: rgb(236, 213, 113);
+    background-color: rgb(228, 236, 113);
 }
