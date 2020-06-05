@@ -38,7 +38,6 @@ class Model {
     }
 
     updateBoard(row, column, playerMarker) {
-        console.log(row, column, playerMarker);
         this.board[row][column] = playerMarker;
         this.checkWinner();
     }

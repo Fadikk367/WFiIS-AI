@@ -26,7 +26,6 @@ class View {
 
     update(board) {
         this.tiles.forEach((tile, i) => {
-            console.log(board[i]);
             switch(board[i]) {
                 case 'X':
                     tile.textContent = 'X';
@@ -72,9 +71,11 @@ class View {
     showWinningCombination(results) {
         this.blockBoard();
         const resultStyles = results.outcome === 'win' ? 'victory' : (results.outcome === 'loose' ? 'defeat' : 'tie');
-        this.tiles[results.combination[0]].classList.add(resultStyles);
-        this.tiles[results.combination[1]].classList.add(resultStyles);
-        this.tiles[results.combination[2]].classList.add(resultStyles);
+        if (results.outcome !== 'tie') {
+            this.tiles[results.combination[0]].classList.add(resultStyles);
+            this.tiles[results.combination[1]].classList.add(resultStyles);
+            this.tiles[results.combination[2]].classList.add(resultStyles);
+        }
     }
 
     blockBoard() {

@@ -1,0 +1,1 @@
+### I put so many file formats there to minimize the possibility of spoiling formulas and styles when opening - hope at least one of them will work appropriate.

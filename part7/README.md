@@ -1,0 +1,1 @@
+### We tried to apply MVC design pattern to this program - maybe it is not perfecvt at the moment but surely we will improved it in the future as well as te minimax algorithm in which we didnt' make it on time to implement alpha-beta prunning. Also getters & setters will be changed for this consistent with JavaScript semantics.

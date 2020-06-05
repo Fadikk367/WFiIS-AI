@@ -91,19 +91,23 @@ class PrimesGenerator {
         std::cout << "<=== Time taken: " << elapsed_seconds.count() << "s ===>" << std::endl;
     }
 
-    void AtkinSieve() {}
+    void AtkinSieve() {} /// Will be implemented in future :-)
 
-    void BruteForcePrimes() {}
+    void BruteForcePrimes() {} /// Will be implemented in future :-)
 
     int m_n;
-    PrimesAlgorithm m_algoritm;
     bool* m_primes;
+    PrimesAlgorithm m_algoritm;
 };
 
 
 int main(int argc, char* argv[]) {
-    PrimesGenerator::info();
+    if (argc <= 1) {
+        std::cout << "Too few command line arguments, please call exe file like: <filename>.exe 100000" << std::endl;
+        exit(1);
+    }
     int n = atoi(argv[1]);
+    PrimesGenerator::info();
     std::cout << "Generate primes up to: " << n << std::endl;
     try {
         PrimesGenerator generator(n);
