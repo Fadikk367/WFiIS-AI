@@ -1,6 +1,6 @@
 ## Algorithms for Artificial Intelligence - WFiIS 2020 Summer Course
 
-### In this repo there are gathered coding parts of my final course portfolio
+### Table of Contents:
 - part1 => AI applications (predictive policing - PredPol)
 - part2 => primes generator (Eratosthenes Sieve C++ implementation)
 - part3 => PEAS and enrivonment analysis for few scenarios
