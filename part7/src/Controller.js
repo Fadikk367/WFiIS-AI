@@ -30,6 +30,7 @@ class Controller {
 
     handleAIMove() {
         const {row, column} = this.model.getBestMove();
+        if (row === undefined || column === undefined) return;
 
         this.model.updateBoard(row, column, this.model.player2.marker);
         const newBoard = this.model.getFlatBoard();
@@ -46,9 +47,9 @@ class Controller {
             this.model.updateBoard(row, column, playerMarker);
             const board = this.model.getFlatBoard();
             this.view.update(board);
+            this.endRound();
+            this.handleAIMove();
         }
-        this.endRound();
-        this.handleAIMove();
     }
 
     endRound() {
